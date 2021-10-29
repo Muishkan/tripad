@@ -1,0 +1,476 @@
+@import url("fonts.css");
+
+/* Golabal Styles */
+body {
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 75vw;
+  margin: 0px auto;
+}
+
+/* Headings */
+
+h2 {
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+}
+h3 {
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 38px;
+}
+h4 {
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 13px;
+}
+
+h5 {
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h6 {
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* Navbars */
+.nav1 img {
+  width: 200px;
+}
+
+.nav1 {
+  margin-top: 75px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
+  background-color: #fff;
+}
+
+.nav1,
+.nav2a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav1-label {
+  display: none;
+}
+
+.search-icon {
+  display: none;
+  font-size: 40px;
+}
+
+/* Nav 2 */
+
+.nav2 {
+  margin-bottom: 30px;
+}
+
+.nav1b {
+  display: flex;
+}
+
+.nav1b div {
+  margin-left: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.nav2a {
+  width: auto;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+/* Navbar pseudo classes */
+
+.nav1b div:last-child {
+  background-color: black;
+  color: white;
+}
+
+.nav1b div:hover {
+  background-color: #e9ecef;
+}
+
+.nav1b div:last-child:hover {
+  background-color: #212529;
+}
+
+.nav2a:hover {
+  color: white;
+  background-color: black;
+  fill: white;
+}
+
+/* Search bar */
+.searchpan {
+  min-height: 350px;
+  background-image: url(/images/home928_dt.jpeg);
+  object-fit: contain;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#search {
+  min-width: 70%;
+  min-height: 50px;
+  border-radius: 25px;
+  padding-left: 15px;
+}
+
+/* Carrousel 1 */
+.carrousel {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.carrousel2 {
+  display: flex;
+  margin-bottom: 60px;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.car1-pan1 {
+  width: 25%;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.car1-pan2 {
+  width: 75%;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.car1-elem img,
+.car2-elem img {
+  width: 290px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.car1-elem:not(:last-of-type),
+.car2-elem:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.car-heading {
+  margin-bottom: 20px;
+  font-weight: 660;
+}
+
+/* First services/ads Pan */
+.service-pan1 {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.service-pan1 div:nth-of-type(1) {
+  width: 60%;
+  background-color: #faf1ed;
+  height: 160px;
+  padding: 20px;
+  box-sizing: broder-box;
+}
+.service-pan1 div:nth-of-type(2) {
+  width: 40%;
+}
+
+.service-pan-img {
+  height: 200px;
+  min-width: 100%;
+}
+
+.service-pan1 div:nth-of-type(1) h4 {
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: #354e46;
+  width: 100px;
+  border-radius: 10px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+/* Second carrousel */
+.car-subheading {
+  font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.car2-elem {
+  position: relative;
+}
+
+.city {
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
+  padding-right: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+
+/* footer and links */
+footer {
+  background-color: #faf1ed;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.foot-col4 {
+  flex-basis: 40%;
+}
+
+a {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: inherit;
+}
+
+li {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.foot-col3 ul:last-of-type {
+  margin-top: 20px;
+}
+
+.foot-note {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reacteur-logo {
+  height: 20px;
+  margin-left: 10px;
+}
+
+.foot-para {
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.foot-para a {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* MODAL STYLES */
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(51, 53, 53, 0.3);
+}
+
+.modal-display {
+  display: block;
+}
+
+/* Modal block  */
+.modal-block {
+  background-color: #fefefe;
+  margin: 10% 30%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.form-block {
+  margin: 30px 100px;
+}
+.form-block h3 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-field {
+  margin: 35px 0px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.form-field input {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.form-btn {
+  margin: 35px auto;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #14213d;
+  font-size: 20px;
+  border-radius: 2px;
+}
+
+/* Close Button */
+.close {
+  color: rgb(170, 170, 170);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ----------------------------------------------------------------------------------------------*/
+/* MEDIA QUERIES  */
+
+/* ------------Screen size 1 ... les than 750 px----------- */
+
+@media (max-width: 750px) {
+  .nav1 div:not(:first-child) {
+    display: none;
+  }
+
+  .search-icon {
+    display: block;
+  }
+
+  .nav1 {
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+  }
+
+  .nav2 {
+    display: flex;
+    overflow-x: scroll;
+  }
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0px auto;
+}
+
+.nav2a {
+  min-width: 120px;
+  min-height: 10px;
+  padding: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.nav2a:nth-child(6),
+.nav2a:nth-child(7) {
+  display: flex;
+}
+
+/* ------------Screen size 2 ... les than 750 px----------- */
+
+@media (min-width: 751px) {
+  .nav2 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .nav2a {
+    min-height: 10px;
+    padding: 15px;
+  }
+}
+
+/* ------------Screen size 3 ... more than 1006px----------- */
+
+@media (min-width: 1006px) {
+  .nav1-label {
+    display: inline;
+  }
+}
+
+/* ------------Screen size 4 ... more than 1167px----------- */
+@media (min-width: 1167px) {
+  .nav2 {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .nav2a {
+    min-height: 10px;
+    padding: 15px;
+  }
+  .nav2a:nth-child(6),
+  .nav2a:nth-child(7) {
+    display: none;
+  }
+}
+
+/* ------------Screen size 5 ... more than 1167px----------- */
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 70vw;
+    margin: 0px auto;
+  }
+}
