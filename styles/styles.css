@@ -54,7 +54,7 @@ h6 {
   margin-bottom: 25px;
   position: sticky;
   top: 0;
-  z-index: 9999999;
+  z-index: 999999;
   background-color: #fff;
 }
 
@@ -70,7 +70,7 @@ h6 {
 
 .search-icon {
   display: none;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 /* Nav 2 */
@@ -151,11 +151,19 @@ h6 {
   overflow: hidden;
   overflow-x: scroll;
 }
+.car1-panx {
+  display: none;
+  margin: 15px 0px;
+  font-size: 24px;
+  line-height: 29px;
+}
 
 .car1-pan1 {
   width: 25%;
   font-size: 24px;
   line-height: 29px;
+  padding-right: 5px;
+  overflow: hidden;
 }
 
 .car1-pan2 {
@@ -258,16 +266,6 @@ footer {
   background-color: #faf1ed;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0px;
-}
-
-.foot-col4 {
-  flex-basis: 40%;
-}
-
 a {
   font-size: 14px;
   line-height: 17px;
@@ -314,7 +312,7 @@ li {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 99999999;
   left: 0;
   top: 0;
   width: 100%;
@@ -384,45 +382,82 @@ li {
 /* ----------------------------------------------------------------------------------------------*/
 /* MEDIA QUERIES  */
 
-/* ------------Screen size 1 ... les than 750 px----------- */
+/* ------------Screen size 1 ... les than 600 px----------- */
+
+@media (max-width: 600px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+  }
+
+  .footer div {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* ------------Screen size 2 ... les than 750 px----------- */
 
 @media (max-width: 750px) {
-  .nav1 div:not(:first-child) {
+  .nav1 div:nth-child(n + 4) {
     display: none;
   }
 
+  .nav1 img {
+    width: 150px;
+  }
+
   .search-icon {
-    display: block;
+    display: flex;
   }
 
   .nav1 {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
   }
 
   .nav2 {
     display: flex;
     overflow-x: scroll;
   }
-}
 
-.container {
-  max-width: 90vw;
-  margin: 0px auto;
-}
+  .container {
+    max-width: 90vw;
+    margin: 0px auto;
+  }
 
-.nav2a {
-  min-width: 120px;
-  min-height: 10px;
-  padding: 5px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
+  .nav2a {
+    min-width: 120px;
+    min-height: 10px;
+    padding: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 
-.nav2a:nth-child(6),
-.nav2a:nth-child(7) {
-  display: flex;
+  .nav2a:nth-child(6),
+  .nav2a:nth-child(7) {
+    display: flex;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    flex-wrap: wrap;
+  }
+  .car1-pan1 {
+    display: none;
+  }
+
+  .car1-panx {
+    display: block;
+  }
+
+  .car1-pan2 {
+    width: 100%;
+  }
 }
 
 /* ------------Screen size 2 ... les than 750 px----------- */
@@ -437,6 +472,16 @@ li {
   .nav2a {
     min-height: 10px;
     padding: 15px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+  }
+
+  .foot-col4 {
+    flex-basis: 40%;
   }
 }
 
