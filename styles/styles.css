@@ -48,14 +48,17 @@ h6 {
 }
 
 .nav1 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #fff;
+}
+
+.nav1-container {
   margin-top: 75px;
-  padding-bottom: 25px;
-  padding-top: 25px;
   margin-bottom: 25px;
   position: sticky;
   top: 0;
   z-index: 999999;
-  background-color: #fff;
 }
 
 .nav1,

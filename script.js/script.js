@@ -8,9 +8,6 @@ const btn = document.getElementById("loginBtn");
 const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// };
 
 btn.addEventListener("click", () => {
   modal.classList.add("modal-display");
@@ -27,3 +24,16 @@ window.addEventListener("click", (event) => {
     modal.classList.remove("modal-display");
   }
 });
+
+// AD TOP  NAVBAR LINE ON SCROLL
+
+window.addEventListener(
+  "scroll",
+  () => {
+    this.scrollY > 100
+      ? (document.querySelector(".nav1-container").style.borderBottom =
+          "1px solid grey")
+      : (document.querySelector(".nav1-container").style.borderBottom = "none");
+  },
+  false
+);
